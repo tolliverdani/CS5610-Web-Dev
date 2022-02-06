@@ -11,7 +11,7 @@ header {
     align-items: center;
 }
 
-font, .suggested-post {
+font, .wd-suggested-post {
     color: rgb(110, 118, 125);
     font-family: "Segoe UI", serif;
 }
@@ -63,7 +63,7 @@ p {
 /* Navigation bar */
 .nav-item {
     list-style-type: none;
-    border-bottom: 2px solid rgb(110, 118, 125);
+    border-bottom: 2px solid rgb(47, 51, 54);
     text-align: center;
     padding: 16px;
 }
@@ -85,31 +85,31 @@ p {
 }
 
 /* Feed */
-.feed {
+.wd-feed {
     list-style-type: none;
     color: rgb(110, 118, 125);
 }
 
-.suggested-post {
+.wd-suggested-post {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    border-bottom: 1px solid rgb(110, 118, 125);
+    border-bottom: 1px solid rgb(47, 51, 54);
     padding: 10px;
 }
 
-.tuit-text {
+.wd-header {
     flex: 3 1 auto;
     padding-right: 10px;
 }
 
-.tuit-header {
+.wd-tuit-header {
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.tuit-image {
+.wd-tuit-image {
     object-fit: cover;
     height: 100px;
     width: 100px;
@@ -118,24 +118,24 @@ p {
     padding: 10px;
 }
 
-.tuit-author {
+.wd-tuit-author {
     padding-top: 6px;
     padding-right: 6px;
 }
 
-.tuit-author-icon {
+.wd-tuit-author-icon {
     height: 12px;
     width: 12px;
     padding-right: 10px;
 }
 
-.tuit-category, .tuit-header, .tuit-stats {
+.wd-tuit-category, .wd-tuit-header, .wd-tuit-stats {
     font-size: 13px;
     color: rgb(110, 118, 125);
     font-style: normal;
 }
 
-.tuit-topic, .tuit-desc, .tuit-author {
+.wd-tuit-topic, .wd-tuit-desc, .wd-tuit-author {
     color: white;
     font-size: 15px;
 }
