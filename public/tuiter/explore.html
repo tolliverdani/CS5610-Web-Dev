@@ -5,47 +5,110 @@
     <title>Explore</title>
     <link href="explore.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
 
-<div id="search-bar">
-    <div class="input-group">
-        <span>
-            <i class="bi bi-search"></i></a>
-        </span>
-        <input class="search-bar" type="text" placeholder="Search Tuiter">
+<body>
+<header>
+    <div class="wd-search-bar">
+        <label>
+            <i class="fa fa-search"></i>
+            <input class="wd-search-input" type="text" placeholder="Search Tuiter">
+        </label>
         <a href="explore-settings.html"><i class="bi bi-gear"></i></a>
     </div>
-</div>
 
-<div id="nav-bar">
-    <nav class="navbar-topics nav-tabs flex-container">
-        <a class="nav-link active" href="#">For you</a>
-        <a class="nav-link" href="#">Trending</a>
-        <a class="nav-link" href="#">COVID-19</a>
-        <a class="nav-link" href="#">News</a>
-        <a class="nav-link" href="#">Sports</a>
-        <a class="nav-link" href="#">Entertainment</a>
+    <nav class="navbar">
+        <ul class="navbar-nav flex-container">
+            <li class="nav-item active">
+                <a class="nav-link active" href="#">For you</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">COVID-19</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Entertainment</a>
+            </li>
+        </ul>
     </nav>
-</div>
+</header>
 
-<ul id="feed flex-container">
-    <li class="suggested-post">
-        <a href="#">Trending in Science</a>
-        <p>Starship</p>
-        <p>55.5K Tuits</p>
-    </li>
-    <li class="suggested-post">
-        <a href="#">Sports</a> Trending
-        <p>Joe Rogan</p>
-        <p>5,218 Tuits</p>
-    </li>
-    <li class="suggested-post">
-        <a href="#">Trending in United States</a>
-        <p>Wonder Bread</p>
-        <p>1,259 Tuits</p>
-    </li>
-</ul>
+<div class="feed flex-container">
+    <ul>
+        <li class="suggested-post flex-container">
+            <div class="tuit-text">
+                <div class="tuit-header">
+                    <p>Trending in Science</p>
+                </div>
+                <p class="tuit-topic">Stars</p>
+                <div class="tuit-stats">
+                    <p>55.5K Tuits</p>
+                </div>
+            </div>
+        </li>
+        <li class="suggested-post flex-container">
+            <div class="tuit-text">
+                <div class="tuit-header">
+                    <p>Entertainment · Trending</p>
+                </div>
+                <p class="tuit-topic">Bill Nye</p>
+                <div class="tuit-stats">
+                    <p>5,218 Tuits</p>
+                </div>
+            </div>
+        </li>
+        <li class="suggested-post flex-container">
+            <div class="tuit-text">
+                <div class="tuit-header">
+                    <img class="tuit-author-icon" src="images/BBC.png" alt="BBC"/>
+                    <p class="tuit-author">BBC </p> · Last night
+                </div>
+                <div class="tuit-desc">
+                    <p>US deploys troops to Europe amid rising tensions over Russia and Ukraine</p>
+                </div>
+            </div>
+            <img class="tuit-image" src="images/RUSSIA.jfif" alt="A Ukrainian troop"/>
+        </li>
+        <li class="suggested-post flex-container">
+            <div class="tuit-text">
+                <div class="tuit-header">
+                <p>COVID-19 · LIVE</p>
+                </div>
+                <p class="tuit-desc">COVID-19: News and updates for Massachusetts</p>
+            </div>
+            <img class="tuit-image" src="images/MA-COVID.jfif" alt="Image of COVID virus"/>
+        </li>
+        <li class="suggested-post flex-container">
+            <div class="tuit-text">
+                <div class="tuit-header">
+                    <p>Beijing 2022 · LIVE</p>
+                </div>
+                <p class="tuit-desc">Beijing 2022: The United States at the Olympic Winter Games</p>
+            </div>
+            <img class="tuit-image" src="images/OLYMPICS.png" alt="Olympics 2022"/>
+        </li>
+        <li class="suggested-post flex-container">
+            <div class="tuit-text">
+                <div class="tuit-header">
+                    <p>Trending in United States</p>
+                </div>
+                <p class="tuit-topic">Wonder Bread</p>
+                <div class="tuit-stats">
+                    <p>1,259 Tuits</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
 
 </body>
 </html>
