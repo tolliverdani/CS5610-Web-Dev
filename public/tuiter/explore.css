@@ -61,6 +61,11 @@ p {
 }
 
 /* Navigation bar */
+
+.navbar {
+    min-width: 800px;
+}
+
 .nav-item {
     list-style-type: none;
     border-bottom: 2px solid rgb(47, 51, 54);

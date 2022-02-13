@@ -3,6 +3,8 @@
 body {
     background: black;
     margin-left: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 header h1 {
@@ -10,10 +12,12 @@ header h1 {
     margin: 0;
     font-family: "Segoe UI", serif;
     font-size: 20px;
+    padding-top: 12px;
 }
 
 header p {
     font-size: 13px;
+    margin-bottom: 16px;
 }
 
 header {
@@ -21,6 +25,7 @@ header {
     flex-direction: column;
     border-bottom: 1px solid rgb(47, 51, 54);
 }
+
 font, .wd-bookmarked, p {
     color: rgb(110, 118, 125);
     font-family: "Segoe UI", serif;
@@ -41,9 +46,6 @@ p {
     overflow: hidden;
 }
 
-/* Icons */
-
-
 /*-----------------------*/
 
 /* Feed */
@@ -55,6 +57,7 @@ p {
 .wd-content-stacked {
     display: flex;
     flex-direction: column;
+    max-width: 504px;
 }
 
 .wd-content-nested {
@@ -67,6 +70,7 @@ p {
     justify-content: space-between;
     border-bottom: 1px solid rgb(47, 51, 54);
     padding-bottom: 16px;
+    padding-top: 16px;
 }
 
 .wd-author-icon {
@@ -74,7 +78,11 @@ p {
     height: 48px;
     width: 48px;
     border-radius: 50%;
-    padding: 10px;
+    padding: 12px;
+}
+
+.wd-article-content {
+    padding: 12px;
 }
 
 .wd-tuit-header {
@@ -84,17 +92,16 @@ p {
 }
 
 .wd-tuit-image {
-    flex-grow: 506px;
     object-fit: cover;
-    height: 50%;
-    width: 100%;
+    max-width: 504px;
+    aspect-ratio: 504 / 264;
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
 }
 
 .wd-tuit-author {
-    padding-top: 6px;
     padding-right: 6px;
+    padding-top: 6px;
 }
 
 .wd-tuit-header {
@@ -106,12 +113,6 @@ p {
 .wd-article-tuit, .wd-article-title, .wd-tuit-author {
     color: white;
     font-size: 15px;
-}
-
-@media (max-width: 50px) {
-    .flex-container {
-        flex: 100%;
-    }
 }
 
 .wd-full-border {
