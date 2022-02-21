@@ -91,7 +91,7 @@ p {
     align-items: center;
 }
 
-.wd-tuit-image {
+.wd-image-100px {
     object-fit: cover;
     max-width: 504px;
     aspect-ratio: 504 / 264;

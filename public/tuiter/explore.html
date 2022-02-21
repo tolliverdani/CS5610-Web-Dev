@@ -3,112 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
     <link href="explore.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-<header>
-    <div class="wd-search-bar">
-        <label>
-            <i class="fa fa-search"></i>
-            <input class="wd-search-input" type="text" placeholder="Search Tuiter">
-        </label>
-        <a href="explore-settings.html"><i class="bi bi-gear"></i></a>
+<body class="bg-black">
+<div class="container mt-4">
+    <div class="row mt-4">
+
+        <!-- Left column -->
+        <div class="col-lg-3 col-1">
+
+            <!-- Left navigation bar -->
+            <ul class="nav nav-pills nav-stacked bg-transparent flex-column border-0 navbar-dark wd-font-20">
+                <li class="border-0 mb-2 ms-3">
+                    <i class="fab fa-twitter fa-2x fa-inverse text-white"></i>
+                </li>
+                <li class="nav-link d-flex justify-content-center justify-content-xl-start text-muted align-items-center border-0 mb-1">
+                    <i class="fa fa-regular fa-house-user"></i>
+                    <span class="d-none d-xl-flex ps-2" href="home.html"><strong> Home</strong></span>
+                </li>
+                <li class="nav-link active d-flex justify-content-center justify-content-xl-start align-items-center border-0 mb-1">
+                    <i class="fa fa-regular fa-hashtag"></i>
+                    <span class="d-none d-xl-flex ps-2" href="explore.html"><strong> Explore</strong></span>
+                </li>
+                <li class="nav-link d-flex justify-content-center justify-content-xl-start text-muted align-items-center border-0 mb-1">
+                    <i class="fa fa-regular fa-bell fa-1x"></i>
+                    <span class="d-none d-xl-flex ps-2" href="notifications.html"><strong> Notifications</strong></span>
+                </li>
+                <li class="nav-link d-flex justify-content-center justify-content-xl-start text-muted align-items-center border-0 mb-1">
+                    <i class="fa fa-regular fa-envelope"></i>
+                    <span class="d-none d-xl-flex ps-2" href="messages.html"><strong> Messages</strong></span>
+                </li>
+                <li class="nav-link d-flex justify-content-center justify-content-xl-start text-muted align-items-center border-0 mb-1">
+                    <i class="fa fa-regular fa-bookmark"></i>
+                    <span class="d-none d-xl-flex ps-2" href="bookmarks.html"><strong> Bookmarks</strong></span>
+                </li>
+                <li class="nav-link d-flex justify-content-center justify-content-xl-start text-muted align-items-center border-0 mb-1">
+                    <i class="fa fa-solid fa-list"></i>
+                    <span class="d-none d-xl-flex ps-2" href="lists.html"><strong> Lists</strong></span>
+                </li>
+                <li class="nav-link d-flex justify-content-center justify-content-xl-start text-muted align-items-center border-0 mb-1">
+                    <i class="fa fa-regular fa-user"></i>
+                    <span class="d-none d-xl-flex ps-2" href="more.html"><strong> Profile</strong></span>
+                </li>
+                <li class="nav-link d-flex justify-content-center justify-content-xl-start text-muted align-items-center border-0 mb-1">
+                    <i class="fa fa-solid fa-ellipsis-h"></i>
+                    <span class="d-none d-xl-flex ps-2" href="more.html"><strong> More</strong></span>
+                </li>
+            </ul>
+            <div class="d-flex border-0 mt-2 justify-content-center">
+                <button class="btn btn-primary rounded-pill wd-bg-color-blue flex-fill">Tuit</button>
+            </div>
+        </div>
+
+        <!-- Middle group -->
+        <div class="col-lg-6 col-11">
+
+            <!-- Search bar -->
+            <div class="row align-items-center">
+                <div class="d-flex col-11 align-items-center rounded-pill bg-dark">
+                    <i class="fas fa-search text-muted"></i>
+                    <input type="text" class="form-control bg-transparent border-0" placeholder="Search Tuiter">
+                </div>
+
+                <div class="col-1 text-muted" href="#">
+                    <i class="fas fa-cog"></i>
+                </div>
+            </div>
+
+
+            <!-- Middle navigation bar -->
+            <ul class="nav border-0 justify-content-between mt-3">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><strong>For you</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="#"><strong>Trending</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="#"><strong>COVID-19</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="#"><strong>News</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="#"><strong>Sports</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="#"><strong>Entertainment</strong></a>
+                </li>
+            </ul>
+
+            <!-- Explore feed -->
+            <div class="row">
+                <ul>
+                    <li class="card border-dark border-0 border-bottom bg-transparent p-0 pb-1 m-0">
+                        <img class="card-img-top m-0 p-0" src="images/Stars.jpg" alt="Card image cap">
+                        <div class="card-body row m-0 p-1">
+                            <div class="col-12 align-items-center justify-content-start m-0">
+                                <span>
+                                    <span class="card-text text-muted wd-font-13 m-0">Trending in Science</span>
+                                    <span class="card-text text-muted wd-font-13 m-0"></span>
+                                </span>
+                                <p class="card-text text-white wd-font-15 m-0">Stars</p>
+                                <p class="card-text text-muted wd-font-13 m-0">55.5K Tuits</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card border-dark border-0 border-bottom bg-transparent p-0 pb-1 m-0">
+                        <div class="card-body row m-0 p-1">
+                            <div class="col-12 align-items-center justify-content-start m-0">
+                                <span>
+                                <span class="card-text text-muted wd-font-13 m-0">Entertainment</span>
+                                <span class="card-text text-muted wd-font-13 m-0"> · Trending</span>
+                            </span>
+                                <p class="card-text text-white wd-font-15 m-0">Bill Nye</p>
+                                <p class="card-text text-muted wd-font-13 m-0">5,218 Tuits</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card border-dark border-0 border-bottom bg-transparent p-0 pb-1 m-0">
+                        <div class="card-body row m-0 p-1">
+                            <div class="col-10 align-items-center justify-content-start m-0">
+                                <span>
+                                    <img class="wd-image-13px rounded-circle"
+                                         src="images/BBC.png" alt="BBC"/>
+                                    <span class="card-text text-white wd-font-13 m-0">BBC </span>
+                                    <span class="card-text text-muted wd-font-13 m-0"> · Last night</span>
+                                </span>
+                                <p class="card-text text-white wd-font-15 m-0">
+                                    US deploys troops to Europe amid rising tensions over Russia and Ukraine</p>
+
+                            </div>
+                            <div class="col-2 align-items-end justify-content-end">
+                                <img class="wd-image-100px rounded"
+                                     src="images/RUSSIA.jfif"
+                                     alt="A Ukrainian troop"/>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card border-dark border-0 border-bottom bg-transparent p-0 pb-1 m-0">
+                        <div class="card-body row m-0 p-1">
+                            <div class="col-10 align-items-center justify-content-start m-0">
+                                <span>
+                                    <span class="card-text text-muted wd-font-13 m-0">COVID-19</span>
+                                    <span class="card-text text-muted wd-font-13 m-0"> · LIVE</span>
+                                </span>
+                                <p class="card-text text-white wd-font-15 m-0">COVID-19: News and updates
+                                    for Massachusetts</p>
+                            </div>
+                            <div class="col-2 align-items-end justify-content-end">
+                                <img class="wd-image-100px rounded"
+                                     src="images/MA-COVID.jfif"
+                                     alt="Image of COVID virus"/>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card border-dark border-0 border-bottom bg-transparent p-0 pb-1 m-0">
+                        <div class="card-body row m-0 p-1">
+                            <div class="col-10 align-items-center justify-content-start m-0">
+                                <span>
+                                    <span class="card-text text-muted wd-font-13 m-0">Beijing 2022</span>
+                                    <span class="card-text text-muted wd-font-15 m-0"> · LIVE</span>
+                                </span>
+                                <p class="card-text text-white wd-font-15 m-0">Beijing 2022: The United
+                                    States at the Olympic Winter Games</p>
+                            </div>
+                            <div class="col-2 align-items-end justify-content-end">
+                                <img class="wd-image-100px rounded"
+                                     src="images/OLYMPICS.png"
+                                     alt="Olympics 2022"/>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card border-dark border-0 border-bottom bg-transparent p-0 pb-1 m-0">
+                        <div class="card-body row m-0 p-1">
+                            <span>
+                               <span class="card-text text-muted wd-font-13 m-0">Trending in United States</span>
+                                <span class="card-text text-muted wd-font-13 m-0"></span>
+                            </span>
+                            <p class="card-text text-white wd-font-15 m-0">Wonder Bread</p>
+                            <p class="card-text text-muted wd-font-13 m-0">1,259 Tuits</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="d-none d-lg-block col-3">
+            <div class="row bg-dark rounded-3 ms-2">
+                <div class="list-group">
+                    <!-- Who to follow -->
+                    <div class="row mb-2 wd-font-15 text-white m-3">
+                        <p><strong>Who to follow</strong></p>
+                    </div>
+
+                    <!-- Cards -->
+                    <div class="card bg-transparent border-0">
+                        <div class="row d-flex justify-content-center align-items-center mb-2 m-0">
+                            <div class="wd-icon me-2 col-2">
+                                <img class="wd-image-36px rounded-circle" src="images/MichaelPollan.jpeg" alt="...">
+                            </div>
+                            <div class="wd-body col-7">
+                                <p class="wd-font-13 text-white m-0">Michael Pollan</p>
+                                <p class="wd-font-13 text-muted m-0">@michaelpollan</p>
+                            </div>
+                            <div class="wd-follow d-flex justify-content-center col-2">
+                                <a href="#"
+                                   class="btn btn-primary btn-sm rounded-pill bg-white border-0 text-dark bg-white"><strong>Follow</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-transparent border-0 m-0">
+                        <div class="row d-flex justify-content-center align-items-center mb-2 m-0">
+                            <div class="wd-icon me-2 col-2">
+                                <img class="wd-image-36px rounded-circle" src="images/BillNye.jpeg" alt="...">
+                            </div>
+                            <div class="wd-body col-7">
+                                <p class="wd-font-13 text-white m-0">Bill Nye</p>
+                                <p class="wd-font-13 text-muted m-0">@TheScienceGuy</p>
+                            </div>
+                            <div class="wd-follow d-flex justify-content-center col-2">
+                                <a href="#"
+                                   class="btn btn-primary btn-sm rounded-pill border-0 bg-white text-dark"><strong>Follow</strong></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button to show more -->
+                    <div class="card bg-transparent border-0 m-2">
+                        <a href="#"
+                           class="btn btn-primary border-0 bg-transparent text-start justify-content-start wd-color-blue">Show
+                            more</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div class="d-block ms-2">
+                <a class="wd-font-13 text-muted ps-1 p-0 text-decoration-none" href="#">Terms of service</a>
+                <a class="wd-font-13 text-muted ps-1 p-0 text-decoration-none" href="#">Privacy Policy</a>
+                <a class="wd-font-13 text-muted ps-1 p-0 text-decoration-none" href="#">Cookie Policy</a>
+                <a class="wd-font-13 text-muted ps-1 p-0 text-decoration-none" href="#">Ads info</a>
+                <a class="wd-font-13 text-muted ps-1 p-0 text-decoration-none" href="#">More →</a>
+                <a class="wd-font-13 text-muted ps-1 p-0 text-decoration-none" href="#">Ⓒ 2021 Tuiter, Inc.</a>
+            </div>
+        </div>
     </div>
-
-    <nav class="navbar">
-        <ul class="navbar-nav flex-container">
-            <li class="nav-item active">
-                <a class="nav-link active" href="#">For you</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Trending</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">COVID-19</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sports</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Entertainment</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
-<div class="wd-feed flex-container">
-    <ul>
-        <li class="wd-suggested-post flex-container">
-            <div class="wd-header">
-                <div class="wd-tuit-header">
-                    <p>Trending in Science</p>
-                </div>
-                <p class="wd-tuit-topic">Stars</p>
-                <div class="wd-tuit-stats">
-                    <p>55.5K Tuits</p>
-                </div>
-            </div>
-        </li>
-        <li class="wd-suggested-post flex-container">
-            <div class="wd-header">
-                <div class="wd-tuit-header">
-                    <p>Entertainment · Trending</p>
-                </div>
-                <p class="wd-tuit-topic">Bill Nye</p>
-                <div class="wd-tuit-stats">
-                    <p>5,218 Tuits</p>
-                </div>
-            </div>
-        </li>
-        <li class="wd-suggested-post flex-container">
-            <div class="wd-header">
-                <div class="wd-tuit-header">
-                    <img class="wd-tuit-author-icon" src="images/BBC.png" alt="BBC"/>
-                    <p class="wd-tuit-author">BBC </p> · Last night
-                </div>
-                <div class="wd-tuit-desc">
-                    <p>US deploys troops to Europe amid rising tensions over Russia and Ukraine</p>
-                </div>
-            </div>
-            <img class="wd-tuit-image" src="images/RUSSIA.jfif" alt="A Ukrainian troop"/>
-        </li>
-        <li class="wd-suggested-post flex-container">
-            <div class="wd-header">
-                <div class="wd-tuit-header">
-                <p>COVID-19 · LIVE</p>
-                </div>
-                <p class="wd-tuit-desc">COVID-19: News and updates for Massachusetts</p>
-            </div>
-            <img class="wd-tuit-image" src="images/MA-COVID.jfif" alt="Image of COVID virus"/>
-        </li>
-        <li class="wd-suggested-post flex-container">
-            <div class="wd-header">
-                <div class="wd-tuit-header">
-                    <p>Beijing 2022 · LIVE</p>
-                </div>
-                <p class="wd-tuit-desc">Beijing 2022: The United States at the Olympic Winter Games</p>
-            </div>
-            <img class="wd-tuit-image" src="images/OLYMPICS.png" alt="Olympics 2022"/>
-        </li>
-        <li class="wd-suggested-post flex-container">
-            <div class="wd-header">
-                <div class="wd-tuit-header">
-                    <p>Trending in United States</p>
-                </div>
-                <p class="wd-tuit-topic">Wonder Bread</p>
-                <div class="wd-tuit-stats">
-                    <p>1,259 Tuits</p>
-                </div>
-            </div>
-        </li>
-    </ul>
 </div>
-
 </body>
-</html>
