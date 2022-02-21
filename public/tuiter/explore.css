@@ -3,32 +3,6 @@ font {
 }
 
 /*-----------------------*/
-.nav-link:hover,
-.nav-link:active,
-.nav-link:visited,
-.nav-link:focus {
-    color: white !important;
-    background-color: transparent !important;
-}
-
-.nav-link.hover,
-.nav-link.active,
-.nav-link.visited,
-.nav-link.focus {
-    color: white !important;
-    background-color: transparent !important;
-    border-bottom: 1px solid rgb(29, 161, 242);
-}
-
-/* Search bar */
-.wd-color-blue {
-    color: rgb(29, 161, 242);
-}
-
-.wd-bg-color-blue {
-    background-color: rgb(29, 161, 242);
-}
-
 .wd-font-10 {
     font-size: 10px;
 }
