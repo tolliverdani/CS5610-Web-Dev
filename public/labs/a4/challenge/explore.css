@@ -3,21 +3,24 @@ font {
 }
 
 /*-----------------------*/
+.nav-link.hover,
+.nav-link.active,
+.nav-link.visited,
+.nav-link.focus,
 .nav-link:hover,
 .nav-link:active,
 .nav-link:visited,
 .nav-link:focus {
     color: white !important;
     background-color: transparent !important;
+    font-weight: bold !important;
 }
 
-.nav-link.hover,
-.nav-link.active,
-.nav-link.visited,
-.nav-link.focus {
+.nav .nav-item .nav-link.active {
     color: white !important;
     background-color: transparent !important;
-    border-bottom: 2px solid rgb(29, 161, 242);
+    font-weight: bold !important;
+    border-bottom: solid rgb(29, 161, 242);
 }
 
 /* Search bar */
@@ -46,8 +49,8 @@ font {
 }
 
 .wd-image-13px {
-    height: 13px;
-    width: 13px;
+    height: 20px;
+    width: 20px;
 }
 
 .wd-image-36px {
@@ -57,6 +60,7 @@ font {
 
 .wd-image-100px {
     object-fit: cover;
-    height: 92px;
-    width: 92px;
+    overflow: hidden;
+    height: 72px;
+    width: 72px;
 }

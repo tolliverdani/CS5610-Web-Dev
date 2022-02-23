@@ -9,15 +9,15 @@
 </head>
 
 <body>
-<div class="container mt-4">
-    <div class="row mt-4">
+<div class="container mt-4 ">
+    <div class="row mt-4 justify-content-between">
 
         <!-- Left column -->
-        <div class="col-lg-3 col-1">
+        <div class="col-lg-2 col-2">
 
             <!-- Left navigation bar -->
             <ul class="nav nav-pills nav-stacked flex-column wd-font-20">
-                <li class="nav-link d-flex border rounded-0 justify-content-center justify-content-xl-start align-items-center">
+                <li class="nav-link d-flex border rounded-0 justify-content-center justify-content-xl-start  align-items-center">
                     <i class="fab fa-twitter fa-1x fa-inverse text-muted"></i>
                 </li>
                 <span class="nav-link d-flex border rounded-0 justify-content-center justify-content-xl-start align-items-center">
@@ -67,40 +67,37 @@
         </div>
 
         <!-- Middle group -->
-        <div class="col-lg-6 col-11">
+        <div class="col-lg-7 col-xl-6 col-10">
 
             <!-- Search bar -->
-            <div class="row align-items-center">
+            <div class="row align-items-center m-1">
                 <div class="d-flex col-11 align-items-center border rounded-pill">
-                    <i class="fas fa-search text-muted "></i>
+                    <i class="fas fa-search text-muted"></i>
                     <input type="text" class="form-control border-0" placeholder="Search Tuiter">
                 </div>
 
                 <div class="col-1" href="#">
-                    <i class="fas fa-cog text-primary"></i>
+                    <i class="fas fa-cog text-primary fa-2x"></i>
                 </div>
             </div>
 
 
             <!-- Middle navigation bar -->
-            <ul class="nav nav-tabs justify-content-between mt-2 mb-2">
+            <ul class="nav nav-tabs wd-font-15 mt-2 mb-2">
                 <li class="nav-item active">
-                    <a class="nav-link active" href="#"><strong>For you</strong></a>
+                    <a class="nav-link text-muted active" href="#"><strong>For you</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-muted" href="#"><strong>Trending</strong></a>
+                    <a class="nav-link" href="#"><strong>Trending</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-muted" href="#"><strong>COVID-19</strong></a>
+                    <a class="nav-link" href="#"><strong>News</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-muted" href="#"><strong>News</strong></a>
+                    <a class="nav-link" href="#"><strong>Sports</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-muted" href="#"><strong>Sports</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-muted" href="#"><strong>Entertainment</strong></a>
+                    <a class="nav-link d-none d-md-block" href="#"><strong>Entertainment</strong></a>
                 </li>
             </ul>
 
@@ -108,97 +105,87 @@
             <div class="row">
                 <ul>
                     <li class="card p-0 pb-1 m-0">
-                        <img class="card-img-top m-0 p-0" src="images/Stars.jpg" alt="Card image cap">
-                        <div class="card-body row m-0 p-1">
-                            <div class="col-12 align-items-center justify-content-start m-0">
+                        <div class="card border-0 rounded-0">
+                            <img class="card-img-top m-0 p-0" src="images/Starship.jpg" alt="SpaceX's Starship">
+                            <div class="card-img-overlay d-flex align-items-end justify-content-start p-0 ps-2 m-0">
+                                <h3 class="text-white"><strong>SpaceX's Starship</strong></h3>
+                            </div>
+                        </div>
+                        <div class="card-body row m-0 p-1 pe-1">
+                            <div class="col-9 col-xxl-10 align-items-center justify-content-start m-0">
                                 <span>
-                                    <span class="card-text text-muted wd-font-13 m-0">Trending in Science</span>
-                                    <span class="card-text text-muted wd-font-13 m-0"></span>
+                                    <p class="card-text text-muted wd-font-15 m-0"><strong>Web Development</strong></p>
+                                    <span>
+                                        <span class="card-text wd-font-15 m-0"><strong>ReactJS</strong></span>
+                                        <i class="fas fa-check-circle"></i>
+                                        <span class="card-text text-muted wd-font-15 m-0"> - 2h</span>
+                                    </span>
                                 </span>
-                                <p class="card-text text-muted wd-font-15 m-0"><strong>Stars</strong></p>
-                                <p class="card-text text-muted wd-font-13 m-0">55.5K Tuits</p>
+                                <p class="card-text wd-font-13 m-0"><strong>React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</strong></p>
+                            </div>
+                            <div class="col-3 col-xxl-2 align-items-end justify-content-end">
+                                <img class="mx-auto d-block img-thumbnail border-0 p-2"
+                                     src="images/React.png"
+                                     alt="React logo"/>
                             </div>
                         </div>
                     </li>
 
-                    <li class="card p-0 pb-1 m-0">
+                    <li class="card p-0 pb-1 pe-1 m-0">
                         <div class="card-body row m-0 p-1">
-                            <div class="col-12 align-items-center justify-content-start m-0">
+                            <div class="col-9 col-xxl-10 align-items-center justify-content-start m-0">
                                 <span>
-                                <span class="card-text text-muted wd-font-13 m-0">Entertainment</span>
-                                <span class="card-text text-muted wd-font-13 m-0"> · Trending</span>
-                            </span>
-                                <p class="card-text text-muted wd-font-15 m-0"><strong>Bill Nye</strong></p>
-                                <p class="card-text text-muted wd-font-13 m-0">5,218 Tuits</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="card p-0 pb-1 m-0">
-                        <div class="card-body row m-0 p-1">
-                            <div class="col-10 align-items-center justify-content-start m-0">
-                                <span>
-                                    <img class="wd-image-13px rounded-circle"
-                                         src="images/BBC.png" alt="BBC"/>
-                                    <span class="card-text text-muted wd-font-13 m-0">BBC </span>
-                                    <span class="card-text text-muted wd-font-13 m-0"> · Last night</span>
+                                    <span>
+                                        <span class="card-text wd-font-15 m-0"><strong>JavaScript</strong></span>
+                                        <i class="fas fa-check-circle"></i>
+                                        <span class="card-text text-muted wd-font-15 m-0"> - 2h</span>
+                                    </span>
                                 </span>
-                                <p class="card-text text-muted wd-font-15 m-0"><strong>US deploys troops to Europe amid
-                                    rising tensions over Russia and Ukraine</strong></p>
-
+                                <p class="card-text wd-font-1 wd-font-15 m-0"><strong>JavaScript is a programming language that can run on browsers as well as desktops</strong></p>
+                                <p class="card-text text-muted wd-font-15 m-0"><strong>123K Tuits</strong></p>
                             </div>
-                            <div class="col-2 align-items-end justify-content-end">
-                                <img class="wd-image-100px rounded"
-                                     src="images/RUSSIA.jfif"
-                                     alt="A Ukrainian troop"/>
+                            <div class="col-3 col-xxl-2 align-items-end justify-content-end">
+                                <img class="wd-image-100px rounded-2 p-2"
+                                     src="images/JavaScript.png"
+                                     alt="React logo"/>
                             </div>
                         </div>
                     </li>
 
-                    <li class="card p-0 pb-1 m-0">
+
+                    <li class="card p-0 pb-1 pe-1 m-0">
                         <div class="card-body row m-0 p-1">
-                            <div class="col-10 align-items-center justify-content-start m-0">
+                            <div class="col-9 col-xxl-10 align-items-center justify-content-start m-0">
                                 <span>
-                                    <span class="card-text text-muted wd-font-13 m-0">COVID-19</span>
-                                    <span class="card-text text-muted wd-font-13 m-0"> · LIVE</span>
+                                    <p class="card-text text-muted wd-font-15 m-0"><strong>Web Development</strong></p>
+                                    <p class="card-text wd-font-15 m-0"><strong>jQuery</strong></p>
                                 </span>
-                                <p class="card-text text-muted wd-font-15 m-0"><strong>COVID-19: News and updates
-                                    for Massachusetts</strong></p>
+                                <p class="card-text text-muted wd-font-15 m-0"><strong>123K Tuits</strong></p>
                             </div>
-                            <div class="col-2 align-items-end justify-content-end">
-                                <img class="wd-image-100px rounded"
-                                     src="images/MA-COVID.jfif"
-                                     alt="Image of COVID virus"/>
+                            <div class="col-3 col-xxl-2 align-items-end justify-content-end">
+                                <img class="wd-image-100px rounded-2 p-2"
+                                     src="images/jQuery.webp"
+                                     alt="React logo"/>
                             </div>
                         </div>
                     </li>
 
-                    <li class="card p-0 pb-1 m-0">
+                    <li class="card p-0 pb-1 pe-1 m-0">
                         <div class="card-body row m-0 p-1">
-                            <div class="col-10 align-items-center justify-content-start m-0">
+                            <div class="col-9 col-xxl-10 align-items-center justify-content-start m-0">
                                 <span>
-                                    <span class="card-text text-muted wd-font-13 m-0">Beijing 2022</span>
-                                    <span class="card-text text-muted wd-font-15 m-0"> · LIVE</span>
+                                    <p class="card-text text-muted wd-font-15 m-0"><strong>Web Development</strong></p>
+                                    <span class="card-text wd-font-15 m-0"><strong>NodeJS</strong></span>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="card-text text-muted wd-font-15 m-0"> - 2h</span>
                                 </span>
-                                <p class="card-text text-muted wd-font-15 m-0"><strong>Beijing 2022: The United
-                                    States at the Olympic Winter Games</strong></p>
+                                <p class="card-text text-muted wd-font-15 m-0"><strong>123K Tuits</strong></p>
                             </div>
-                            <div class="col-2 align-items-end justify-content-end">
-                                <img class="wd-image-100px rounded"
-                                     src="images/OLYMPICS.png"
-                                     alt="Olympics 2022"/>
+                            <div class="col-3 col-xxl-2 align-items-end justify-content-end">
+                                <img class="wd-image-100px rounded-2 p-2"
+                                     src="images/NodeJS.png"
+                                     alt="React logo"/>
                             </div>
-                        </div>
-                    </li>
-
-                    <li class="card p-0 pb-1 m-0">
-                        <div class="card-body row m-0 p-1">
-                            <span>
-                               <span class="card-text text-muted wd-font-13 m-0">Trending in United States</span>
-                                <span class="card-text text-muted wd-font-13 m-0"></span>
-                            </span>
-                            <p class="card-text text-muted wd-font-15 m-0"><strong>Wonder Bread</strong></p>
-                            <p class="card-text text-muted wd-font-13 m-0">1,259 Tuits</p>
                         </div>
                     </li>
                 </ul>
@@ -207,21 +194,21 @@
 
         <!-- Right column -->
         <div class="d-none d-lg-block col-3">
-            <div class="row d-flex align-items-center m-0 border">
+            <div class="row d-flex align-items-center m-0 p-0 border">
                 <!-- Who to follow -->
-                <p class="wd-font-15 text-muted border m-0 p-2"><strong>Who to follow</strong></p>
+                <p class="wd-font-15 border m-0 p-2"><strong>Who to follow</strong></p>
 
 
                 <!-- Cards -->
                 <div class="row d-flex align-items-center m-0 border">
-                    <div class="col-2 p-2">
+                    <div class="col-2 justify-content-center p-1">
                         <img class="wd-image-36px rounded-circle"
-                             src="images/MichaelPollan.jpeg"
+                             src="images/Java.png"
                              alt="...">
                     </div>
                     <div class="col-7">
-                        <p class="wd-font-13 text-muted m-0"><strong>Michael Pollan</strong></p>
-                        <p class="wd-font-13 text-muted m-0">@michaelpollan</p>
+                        <p class="wd-font-13 m-0"><strong>Java</strong></p>
+                        <p class="wd-font-13 text-muted m-0">@Java</p>
                     </div>
                     <div class="d-flex justify-content-center col-2">
                         <a href="#"
@@ -230,22 +217,72 @@
                 </div>
 
                 <div class="row d-flex align-items-center m-0 border">
-                    <div class="col-2 p-2">
+                    <div class="col-2 justify-content-center p-1">
                         <img class="wd-image-36px rounded-circle"
-                             src="images/BillNye.jpeg"
+                             src="images/RelSpace.jpg"
                              alt="...">
                     </div>
                     <div class="col-7">
-                        <p class="wd-font-13 text-muted m-0"><strong>Bill Nye</strong></p>
-                        <p class="wd-font-13 text-muted m-0">@TheScienceGuy</p>
+                        <p class="wd-font-13 m-0"><strong>Relativity Space</strong></p>
+                        <p class="wd-font-13 text-muted m-0">@relativityspace</p>
                     </div>
                     <div class="d-flex justify-content-center col-2">
                         <a href="#"
-                           class="btn btn-primary btn-sm rounded-pill border-0"><strong>Follow</strong></a>
+                           class="btn btn-primary btn-sm rounded-pill"><strong>Follow</strong></a>
                     </div>
                 </div>
+
+                <div class="row d-flex align-items-center m-0 border">
+                    <div class="col-2 justify-content-center p-1">
+                        <img class="wd-image-36px rounded-circle"
+                             src="images/VirginGalactic.png"
+                             alt="...">
+                    </div>
+                    <div class="col-7">
+                        <p class="wd-font-13 m-0"><strong>Virgin Galactic</strong></p>
+                        <p class="wd-font-13 text-muted m-0">@virgingalactic</p>
+                    </div>
+                    <div class="d-flex justify-content-center col-2">
+                        <a href="#"
+                           class="btn btn-primary btn-sm rounded-pill"><strong>Follow</strong></a>
+                    </div>
+                </div>
+
+                <div class="row d-flex align-items-center m-0 border">
+                    <div class="col-2 justify-content-center p-1">
+                        <img class="wd-image-36px rounded-circle"
+                             src="images/NASA.png"
+                             alt="...">
+                    </div>
+                    <div class="col-7">
+                        <p class="wd-font-13 m-0"><strong>NASA</strong></p>
+                        <p class="wd-font-13 text-muted m-0">@NASA</p>
+                    </div>
+                    <div class="d-flex justify-content-center col-2">
+                        <a href="#"
+                           class="btn btn-primary btn-sm rounded-pill"><strong>Follow</strong></a>
+                    </div>
+                </div>
+
+                <div class="row d-flex align-items-center m-0 border">
+                    <div class="col-2 justify-content-center p-1">
+                        <img class="wd-image-36px rounded-circle"
+                             src="images/Tesla.svg.png"
+                             alt="...">
+                    </div>
+                    <div class="col-7">
+                        <p class="wd-font-13 m-0"><strong>Tesla</strong></p>
+                        <p class="wd-font-13 text-muted m-0">@Tesla</p>
+                    </div>
+                    <div class="d-flex justify-content-center col-2">
+                        <a href="#"
+                           class="btn btn-primary btn-sm rounded-pill"><strong>Follow</strong></a>
+                    </div>
+                </div>
+
             </div>
         </div>
+
     </div>
 </div>
 </body>
