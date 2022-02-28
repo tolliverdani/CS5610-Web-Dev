@@ -22,11 +22,13 @@ font {
 .wd-image-13px {
     height: 13px;
     width: 13px;
+    object-fit: cover;
+
 }
 
 .wd-image-36px {
-    height: 42px;
-    width: 42px;
+    height: 36px;
+    width: 36px;
 }
 
 .wd-image-100px {

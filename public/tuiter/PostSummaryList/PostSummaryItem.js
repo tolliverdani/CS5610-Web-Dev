@@ -13,7 +13,7 @@ const PostSummaryItem = (post) => {
                     
                 </div>
                 <div class="col-3 col-xxl-2 rounded-3">
-                    <img class="img-thumbnail float-end border-0 rounded-5"
+                    <img class="img-thumbnail float-end border-0 rounded-5 bg-transparent"
                          src=${post.image}
                          alt="An image of ${post.image}"/>
                 </div>
