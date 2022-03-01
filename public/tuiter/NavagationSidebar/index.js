@@ -4,38 +4,38 @@ const NavigationSidebar = (active) => {
                 <a class="list-group-item text-white" href="/">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <li class="list-group-item list-group-item-action justify-content-between align-items-center ${active === 'home' ? 'active' : ''}"> 
+                <a class="list-group-item list-group-item-action align-items-center ${active === 'home' ? 'active' : ''}" href="../HomeScreen/index.html"> 
                     <i class="fa fa-regular fa-house-user"></i>
-                    <span class="d-none d-xl-inline" href="../HomeScreen/home.html"> Home</span>
-                </li>
-                <li class="list-group-item list-group-item-action align-items-center ${active === 'explore' ? 'active' : ''}"> 
+                    <span class="d-none d-xl-inline" > Home</span>
+                </a>
+                <a class="list-group-item list-group-item-action align-items-center ${active === 'explore' ? 'active' : ''}" href="../ExploreScreen/index.html"> 
                     <i class="fa fa-regular fa-hashtag"></i>
-                    <span class="d-none d-xl-inline" href="../ExploreScreen/explore.html"> Explore</span>
-                </li>
-                <li class="list-group-item list-group-item-action justify-content-between align-items-center ${active === 'notifications' ? 'active' : ''}"> 
+                    <span class="d-none d-xl-inline"> Explore</span>
+                </a>
+                <a class="list-group-item list-group-item-action align-items-center ${active === 'notifications' ? 'active' : ''}" href="#"> 
                     <i class="fa fa-regular fa-bell fa-1x"></i>
-                    <span class="d-none d-xl-inline" href="notifications.html"> Notifications</span>
-                </li>
-                <li class="list-group-item list-group-item-action justify-content-between align-items-center ${active === 'messages' ? 'active' : ''}"> 
+                    <span class="d-none d-xl-inline"> Notifications</span>
+                </a>
+                <a class="list-group-item list-group-item-action align-items-center ${active === 'messages' ? 'active' : ''}" href="#"> 
                     <i class="fa fa-regular fa-envelope"></i>
-                    <span class="d-none d-xl-inline" href="messages.html"> Messages</span>
-                </li>
-                <li class="list-group-item list-group-item-action justify-content-between align-items-center ${active === 'bookmarks' ? 'active' : ''}"> 
+                    <span class="d-none d-xl-inline"> Messages</span>
+                </a>
+                <a class="list-group-item list-group-item-action align-items-center ${active === 'bookmarks' ? 'active' : ''}" href="#"> 
                     <i class="fa fa-regular fa-bookmark"></i>
-                    <span class="d-none d-xl-inline" href="bookmarks.html"> Bookmarks</span>
-                </li>
-                <li class="list-group-item list-group-item-action justify-content-between align-items-center ${active === 'lists' ? 'active' : ''}"> 
+                    <span class="d-none d-xl-inline"> Bookmarks</span>
+                </a>
+                <a class="list-group-item list-group-item-action align-items-center ${active === 'lists' ? 'active' : ''}" href="#"> 
                     <i class="fa fa-solid fa-list"></i>
-                    <span class="d-none d-xl-inline" href="lists.html"> Lists</span>
-                </li>
-                <li class="list-group-item list-group-item-action justify-content-between align-items-center ${active === 'profile' ? 'active' : ''}"> 
+                    <span class="d-none d-xl-inline"> Lists</span>
+                </a>
+                <a class="list-group-item list-group-item-action align-items-center ${active === 'profile' ? 'active' : ''}"href="#"> 
                     <i class="fa fa-regular fa-user"></i>
-                    <span class="d-none d-xl-inline" href="profile.html"> Profile</span>
-                </li>
-                <li class="list-group-item list-group-item-action justify-content-between align-items-center ${active === 'more' ? 'active' : ''}"> 
+                    <span class="d-none d-xl-inline" > Profile</span>
+                </a>
+                <a class="list-group-item list-group-item-action align-items-center ${active === 'more' ? 'active' : ''}" href="#"> 
                     <i class="fa fa-solid fa-ellipsis-h"></i>
-                    <span class="d-none d-xl-inline" href="more.html"> More</span>
-                </li>
+                    <span class="d-none d-xl-inline"> More</span>
+                </a>
             </ul>
             <div class="d-grid mt-2">
                 <a href="tweet.html"
