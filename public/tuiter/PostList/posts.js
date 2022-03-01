@@ -11,8 +11,7 @@ export default [
         link: 'netflix.com',
         commentCount: '4.2K',
         retweetCount: '3.5K',
-        likes: '37.5K',
-    },
+        likes: '37.5K', },
     {
         icon: '../images/nypost.jpg',
         user: 'New York Post',
@@ -25,6 +24,5 @@ export default [
         link: '',
         commentCount: '565',
         retweetCount: '2.4K',
-        likes: '4K',
-    },
+        likes: '4K', },
 ];

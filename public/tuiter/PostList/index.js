@@ -5,8 +5,8 @@ const PostList = () => {
     return (`
             <ul class="list-group">        
 ${
-        posts.map(post => {
-            return (PostItem(post));
+        posts.map(posts => {
+            return (PostItem(posts));
         }).join('')
     }
         </ul>
