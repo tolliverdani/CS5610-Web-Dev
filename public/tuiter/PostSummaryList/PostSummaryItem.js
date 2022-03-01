@@ -10,7 +10,6 @@ const PostSummaryItem = (post) => {
                         <span class="card-text text-muted wd-font-13 m-0"> · ${post.time}</span>
                     </span>
                     <p class="card-text text-white wd-font-15 m-0">${post.title}</p>
-                    
                 </div>
                 <div class="col-3 col-xxl-2 rounded-3">
                     <img class="img-thumbnail float-end border-0 rounded-5 bg-transparent"

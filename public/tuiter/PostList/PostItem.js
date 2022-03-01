@@ -3,7 +3,7 @@ const PostItem = (posts) => {
         <li class="list-group-item">
             <div class="card-body row mt-2 mb-2 m-0 p-0">
                 <div class="col-1 border-0 m-0 p-0">
-                    <img class="img-thumbnail rounded-circle border-0 bg-transparent" src="${posts.icon}"/> 
+                    <img class="img-thumbnail rounded-circle border-0 bg-transparent" src="${posts.icon}" alt="..."/> 
                 </div>           
                 <div class="col-11 align-items-center justify-content-start m-0">
                         <span>
