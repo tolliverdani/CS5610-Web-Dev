@@ -1,5 +1,5 @@
 import NavigationSidebar from "../NavagationSidebar/index.js";
-import HomeComponent from "../HomeScreen/HomeComponent.js";
+import HomeComponent from "./HomeComponent.js";
 import PostSummaryList from "../PostSummaryList/index.js";
 
 (function ($) {
