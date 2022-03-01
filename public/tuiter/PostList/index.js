@@ -1,12 +1,12 @@
 import PostItem from "./PostItem.js";
-import posts from "./posts.js"
+import post from "./posts.js"
 
 const PostList = () => {
     return (`
             <ul class="list-group">        
 ${
-        posts.map(posts => {
-            return (PostItem(posts));
+        post.map(post => {
+            return (PostItem(post));
         }).join('')
     }
         </ul>
