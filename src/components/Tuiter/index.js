@@ -1,9 +1,12 @@
 import React from "react";
-import NavigationSidebar from "./NavigationSidebar";
+import ExploreScreen from "./ExploreScreen/ExploreScreen";
+
 
 const Tuiter = () => {
-    return(
-        <NavigationSidebar active="home"/>
+    return (
+        <>
+            <ExploreScreen/>
+        </>
     )
 };
 export default Tuiter;
