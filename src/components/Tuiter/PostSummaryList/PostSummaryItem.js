@@ -7,7 +7,7 @@ const PostSummaryItem =
              userName: "ReactJS",
              time: "2h",
              title: "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
-             image: "../../../images/react-blue.png",
+             image: "../../../Tuiter/images/react-blue.png",
          }
      }) => {
         return (
@@ -28,12 +28,12 @@ const PostSummaryItem =
                         <div className={`col-3 col-xxl-2 rounded-3`}>
                             <img className={`img-thumbnail float-end border-0 rounded-5 bg-transparent`}
                                  src={post.image}
-                                 alt="An image"/>
+                                 alt=""/>
                         </div>
                     </div>
                 </li>
             </>
         );
-    }
+    };
 
 export default PostSummaryItem;

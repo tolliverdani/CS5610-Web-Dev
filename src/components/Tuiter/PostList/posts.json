@@ -1,0 +1,30 @@
+[
+  {
+    "icon": "../Tuiter/images/elonmusk.jpg",
+    "user": "Elon Musk",
+    "userName": "elonmusk",
+    "time": "23h",
+    "title": "Amazing show about <a href=\"#\">@Inspiration4x</a> mission!",
+    "image": "../Tuiter/images/inspiration4x.jpg",
+    "linkTitle": "Watch Countdown: Inspiration4 Mission to Space | Netflix Official Site",
+    "linkDesc": "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space mission.",
+    "link": "netflix.com",
+    "commentCount": "4.2K",
+    "retweetCount": "3.5K",
+    "likes": "37.5K"
+  },
+  {
+    "icon": "../Tuiter/images/nypost.jpg",
+    "user": "New York Post",
+    "userName": "nypost",
+    "time": "23h",
+    "title": "JavaScript is programming language that can run on browsers as well as desktops <a href=\"#\">trib.al/nx2Gfaq</a>",
+    "image": "../Tuiter/images/grimes.webp",
+    "linkTitle": "",
+    "linkDesc": "",
+    "link": "",
+    "commentCount": "565",
+    "retweetCount": "2.4K",
+    "likes": "4K"
+  }
+]
