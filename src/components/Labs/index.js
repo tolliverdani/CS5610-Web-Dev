@@ -7,7 +7,7 @@ import ConditionalOutput from "./ConditionalOutput";
 import TodoList from "./Todo/TodoList";
 
 const Index = () => {
-    return(
+    return (
         <>
             <h1>Labs</h1>
             <TodoItem/>
@@ -16,12 +16,8 @@ const Index = () => {
             <Styles/>
             <Classes/>
 
-            <Link to="/hello">
-                Hello
-            </Link> |
-            <Link to="/tuiter">
-                Tuiter
-            </Link>
+            <Link to="/hello">Hello | </Link>
+            <Link to="/tuiter/home">Tuiter</Link>
         </>
     )
 };

@@ -9,7 +9,8 @@ const PostItem = ({
                           image: "../../../Tuiter/images/react-blue.png",
                       }
                   }) => {
-    return (<>
+    return (
+        <>
             <li className={`list-group-item`}>
                 <div className={`card-body row mt-2 mb-2 m-0 p-0`}>
                     <div className={`col-1 border-0 m-0 p-0`}>
@@ -32,7 +33,8 @@ const PostItem = ({
                                 src={posts.image}
                                 alt=""/>
                         </div>
-                        <div className={`border border-secondary rounded-bottom ps-2 pe-2 pt-2 p-0 m-0 {posts.link === '' ? 'd-none' : ''}`}>
+                        <div
+                            className={`border border-secondary rounded-bottom ps-2 pe-2 pt-2 p-0 m-0 {posts.link === '' ? 'd-none' : ''}`}>
                             <p className={`card-text text-white wd-font-15 m-0 mb-2`}>{posts.linkTitle}</p>
                             <p className={`card-text text-muted wd-font-15 m-0 mb-2`}>{posts.linkDesc}</p>
                             <p className={`card-text text-muted wd-font-15 m-0 mb-2`}>

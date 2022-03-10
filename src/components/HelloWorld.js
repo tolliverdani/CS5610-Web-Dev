@@ -5,12 +5,8 @@ const HelloWorld = () => {
     return(
         <>
             <h1>Hello World!</h1>
-            <Link to="/labs">
-                Labs
-            </Link> |
-            <Link to="/tuiter">
-                Tuiter
-            </Link>
+            <Link to="/labs">Labs | </Link>
+            <Link to="/tuiter"> Tuiter</Link>
         </>
 )
 };
