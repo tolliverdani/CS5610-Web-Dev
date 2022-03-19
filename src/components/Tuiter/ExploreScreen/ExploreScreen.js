@@ -13,7 +13,7 @@ const ExploreScreen = () => {
             <div className={`col-10 col-md-10 col-lg-7 col-xl-6`}>
                 <ExploreComponent/>
             </div>
-            <div className={`d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4`}>
+            <div className={`d-sm-none d-lg-block col-lg-4 col-xl-4`}>
                 <WhoToFollowList/>
             </div>
         </div>

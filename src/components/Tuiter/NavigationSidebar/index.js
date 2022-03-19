@@ -54,7 +54,8 @@ const NavigationSidebar =
                     </Link>
                 </ul>
                 <div className={`d-grid mt-2`}>
-                    <a className={`btn btn-primary btn-block rounded-pill`}>Tweet</a>
+                    <a className={`btn btn-primary btn-block rounded-pill`}
+                    href={"/#"}>Tweet</a>
                 </div>
             </>
         );

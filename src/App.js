@@ -1,10 +1,12 @@
-import './vendors/bootstrap/css/bootstrap.min.css';
-import './vendors/bootstrap/bootstrap.min.css';
-import './vendors/fontawesome/css/all.min.css';
-import './App.css';
+import '../src/vendors/bootstrap/css/bootstrap.min.css';
+import '../src/vendors/bootstrap/bootstrap.min.css';
+import '../src/vendors/fontawesome/css/all.min.css';
+import '../src/App.css';
+
+import {BrowserRouter, Route} from "react-router-dom";
+
 import HelloWorld from "./components/HelloWorld";
 import Index from "./components/Labs";
-import {BrowserRouter, Route} from "react-router-dom";
 import HomeScreen from "./components/Tuiter/HomeScreen/HomeScreen";
 import ExploreScreen from "./components/Tuiter/ExploreScreen/ExploreScreen";
 

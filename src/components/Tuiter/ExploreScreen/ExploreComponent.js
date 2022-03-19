@@ -12,33 +12,33 @@ const ExploreComponent = () => {
                            placeholder="Search Tuiter"/>
                 </div>
 
-                <div className={`col-1`} href="#">
+                <div className={`col-1`} href="/#">
                     <i className={`fas fa-cog fa-2x text-primary`}/>
                 </div>
             </div>
 
             <ul className={`nav mb-2 nav-tabs`}>
                 <li className={`nav-item`}>
-                    <a className={`nav-link active`} href="#"><strong>For you</strong></a>
+                    <a className={`nav-link active`} href="/#"><strong>For you</strong></a>
                 </li>
                 <li className={`nav-item`}>
-                    <a className={`nav-link`} href="#"><strong>Trending</strong></a>
+                    <a className={`nav-link`} href="/#"><strong>Trending</strong></a>
                 </li>
                 <li className={`nav-item`}>
-                    <a className={`nav-link`} href="#"><strong>News</strong></a>
+                    <a className={`nav-link`} href="/#"><strong>News</strong></a>
                 </li>
                 <li className={`nav-item`}>
-                    <a className={`nav-link`} href="#"><strong>Sports</strong></a>
+                    <a className={`nav-link`} href="/#"><strong>Sports</strong></a>
                 </li>
                 <li className={`nav-item`}>
-                    <a className={`nav-link d-none d-md-block`} href="#"><strong>Entertainment</strong></a>
+                    <a className={`nav-link d-none d-md-block`} href="/#"><strong>Entertainment</strong></a>
                 </li>
             </ul>
 
             <div className={`position-relative rounded-0`}>
                 <img className={`card-img rounded-0`}
                      src="../Tuiter/images/Stars.jpg"
-                     alt="Card image cap"/>
+                     alt="starry sky"/>
                 <div className={`position-absolute bottom-0 ms-2`}>
                     <h4 className={`text-white`}><strong>Counting the stars in the sky</strong></h4>
                 </div>
