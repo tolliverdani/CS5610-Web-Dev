@@ -38,58 +38,56 @@ const EditProfileScreen = () => {
 
     return (
         <>
-            <br/>
-
-            <div className={"d-block mb-4"}>
-                <Link to={"../../tuiter/profile"}><i className={"fa fa-times"} aria-hidden="true"/></Link>
-                <Link to={"../../tuiter/profile"} onClick={saveProfileClickHandler}
-                        className={"btn border-white rounded-pill float-end"}>Save
+            <div className={"mb-4 align-items-center"}>
+                <Link to={"../../tuiter/profile"}>
+                    <i className={"fa fa-times m-0"} aria-hidden="true"/></Link>
+                <Link to={"../../tuiter/profile"}
+                      onClick={saveProfileClickHandler}
+                      className={"btn btn-sm border-white rounded-pill float-end m-0"}>Save
                 </Link>
             </div>
 
-            <div className={"mt-2 mb-2"}>
-                <img
-                    className={`img-thumbnail rounded-top border-bottom-0 m-0 p-0 d-flex bg-transparent border-secondary`}
-                    src={profile.bannerPicture}
-                    alt={"Banner picture for " + profile.handle}/>
+            <img
+                className={`img-thumbnail wd-overlap m-0 p-0 d-flex bg-transparent border-0`}
+                src={profile.bannerPicture}
+                alt={"Banner picture for " + profile.handle}/>
 
-                <img className={`img-thumbnail rounded-circle border-1 border-white bg-transparent`}
-                     src={profile.profilePicture}
-                     alt={"Profile picture for " + profile.handle}/>
-            </div>
+            <img
+                className={`img-thumbnail wd-profile-image wd-shift-up rounded-circle border-2 ms-2 p-0`}
+                src={profile.profilePicture}
+                alt={"Profile picture for " + profile.handle}/>
 
-
-            <form className={"mt-2"}>
+            <form>
                 <div className={"form-group"}>
                     <label htmlFor={"profile-name"} className={"text-muted"}>Handle</label>
                     <input id={"profile-name"}
                            type={"text"}
-                           className={"form-control border border-dark bg-black text-white"}
-                           value={profile.handle}
+                           className={"form-control border border-dark bg-black text-white p-1"}
+                           placeholder={profile.handle}
                            onChange={profileChangeHandler}/>
                     <label htmlFor={"profile-bio"} className={"text-muted"}>Bio</label>
                     <textarea id={"profile-bio"}
-                              className={"form-control border border-dark bg-black text-white"}
+                              className={"form-control border border-dark bg-black text-white p-1"}
                               rows={"3"}
-                              value={profile.bio}
+                              placeholder={profile.bio}
                               onChange={profileChangeHandler}/>
                     <label htmlFor={"profile-location"} className={"text-muted"}>Location</label>
                     <input id={"profile-location"}
                            type={"text"}
-                           className={"form-control border border-dark bg-black text-white"}
-                           value={profile.location}
+                           className={"form-control border border-dark bg-black text-white p-1"}
+                           placeholder={profile.location}
                            onChange={profileChangeHandler}/>
                     <label htmlFor={"profile-website"} className={"text-muted"}>Website link</label>
                     <input id={"profile-website"}
                            type={"text"}
-                           className={"form-control border border-dark bg-black text-white"}
-                           value={profile.website}
+                           className={"form-control border border-dark bg-black text-white p-1"}
+                           placeholder={profile.website}
                            onChange={profileChangeHandler}/>
                     <label htmlFor={"profile-dateOfBirth"} className={"text-muted"}>Date of Birth</label>
                     <input id={"profile-dateOfBirth"}
                            type={"date"}
-                           className={"form-control border border-dark bg-black text-white"}
-                           value={profile.dateOfBirth}
+                           className={"form-control border border-dark bg-black text-white p-1"}
+                           placeholder={profile.dateOfBirth}
                            onChange={profileChangeHandler}/>
                 </div>
             </form>

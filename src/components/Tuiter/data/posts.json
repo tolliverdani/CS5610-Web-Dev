@@ -1,11 +1,11 @@
 [
   {
-    "icon": "images/elonmusk.jpg",
+    "icon": "../images/elonmusk.jpg",
     "user": "Elon Musk",
     "userName": "elonmusk",
     "time": "23h",
     "title": "Amazing show about <a href=\"#\">@Inspiration4x</a> mission!",
-    "image": "images/inspiration4x.jpg",
+    "image": "../images/inspiration4x.jpg",
     "linkTitle": "Watch Countdown: Inspiration4 Mission to Space | Netflix Official Site",
     "linkDesc": "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space mission.",
     "link": "netflix.com",
@@ -14,12 +14,12 @@
     "likes": "37.5K"
   },
   {
-    "icon": "images/nypost.jpg",
+    "icon": "../images/nypost.jpg",
     "user": "New York Post",
     "userName": "nypost",
     "time": "23h",
     "title": "JavaScript is programming language that can run on browsers as well as desktops <a href=\"#\">trib.al/nx2Gfaq</a>",
-    "image": "images/grimes.webp",
+    "image": "../images/grimes.webp",
     "linkTitle": "",
     "linkDesc": "",
     "link": "",

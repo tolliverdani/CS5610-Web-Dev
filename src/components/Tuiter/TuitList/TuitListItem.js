@@ -34,8 +34,8 @@ const TuitListItem = ({
             if (!post.hasOwnProperty("attachments")) return;
             if (post.attachments.hasOwnProperty("video")) {
                 return (
-                    <iframe width="560"
-                            height="315"
+                    <iframe width="100%"
+                            height="auto"
                             src={"https://www.youtube.com/embed/" + post.attachments.video}
                             title="YouTube video player"
                             frameBorder="0"
