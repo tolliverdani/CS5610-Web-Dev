@@ -1,10 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-const NavigationSidebar = () => {
-
-    const active = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1);
-
+const NavigationSidebar = ({
+                               active='home'
+                           }) => {
     return (
         <>
             <ul className={`list-group`}>

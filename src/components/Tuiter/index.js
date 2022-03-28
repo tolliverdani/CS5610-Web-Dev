@@ -4,7 +4,7 @@ import tuitsReducer from "./reducers/tuits-reducer";
 import profileReducer from "./reducers/profile-reducer";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
-import {Outlet} from "react-router-dom";
+import {Outlet, useLocation} from "react-router-dom";
 import NavigationSidebar from "./NavigationSidebar";
 import WhoToFollowList from "./WhoToFollowList";
 
@@ -21,7 +21,7 @@ const Tuiter = () => {
         <Provider store={store}>
             <div className="row mt-2">
                 <div className="col-2 col-lg-1 col-xl-2">
-                    <NavigationSidebar/>
+                    <NavigationSidebar active={useLocation().pathname.substring(window.location.pathname.lastIndexOf('/') + 1)}/>
                 </div>
                 <div className="col-10 col-lg-7 col-xl-6">
                     <Outlet/>
