@@ -21,7 +21,7 @@ const WhatsHappening = () => {
                     <div className={"col-2 border-0"}>
                         <img className={`img-thumbnail rounded-circle border-0 bg-transparent`}
                              src={"../images/profilePicture.jpg"}
-                             alt={"profile picture"}/>
+                             alt={"dtolliver"}/>
                     </div>
                     <div className={"col-10"}>
                         <div className={"row d-flex mb-2"}>
