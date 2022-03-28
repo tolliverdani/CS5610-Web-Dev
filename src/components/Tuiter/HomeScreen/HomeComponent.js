@@ -1,6 +1,6 @@
 import React from "react";
 
-import PostList from "../PostList/index";
+import TuitList from "../TuitList";
 
 const HomeComponent = () => {
     return (
@@ -35,7 +35,7 @@ const HomeComponent = () => {
                 </li>
             </ul>
 
-            {PostList()}
+            {TuitList()}
         </>
     );
 }

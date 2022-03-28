@@ -13,12 +13,6 @@ const data = [
 
 const todosReducer = (state = data, action) => {
     switch (action.type) {
-        case 'update-todo':
-            return state.map(todo => {
-                return todo._id === action.todo._id ? action.todo : todo;
-            });
-        case 'delete-todo':
-            return state.filter(todo => todo !== action.todo);
         case 'create-todo':
             const newTodo = {
                 ...action.todo,
@@ -28,6 +22,12 @@ const todosReducer = (state = data, action) => {
                 ...state,
                 newTodo
             ]
+        case 'delete-todo':
+            return state.filter(todo => todo !== action.todo);
+        case 'update-todo':
+            return state.map(todo => {
+                return todo._id === action.todo._id ? action.todo : todo;
+            });
         default:
             return state;
     }

@@ -4,7 +4,7 @@ import NavigationSidebar from "../NavigationSidebar";
 import ExploreComponent from "./ExploreComponent";
 import WhoToFollowList from "../WhoToFollowList";
 
-const ExploreScreen = () => {
+const Index = () => {
     return (
         <div className={`row mt-2`}>
             <div className={`col-2 col-md-2 col-lg-1 col-xl-2`}>
@@ -19,4 +19,4 @@ const ExploreScreen = () => {
         </div>
     );
 };
-export default ExploreScreen;
+export default Index;
