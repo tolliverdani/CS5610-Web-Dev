@@ -1,5 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
+import {deleteTuit} from "../actions/tuits-actions";
 import TuitStats from "./TuitStats";
 
 const TuitListItem = ({
@@ -28,11 +29,14 @@ const TuitListItem = ({
                           }
                       }) => {
 
-        const parse = require('html-react-parser');
+    const parse = require('html-react-parser');
+    const dispatch = useDispatch();
 
-        const attachments = (post) => {
-            if (!post.hasOwnProperty("attachments")) return;
-            if (post.attachments.hasOwnProperty("video")) {
+    const attachments = (post) => {
+
+        switch (post.hasOwnProperty) {
+
+            case "video" :
                 return (
                     <iframe width="100%"
                             height="auto"
@@ -41,21 +45,16 @@ const TuitListItem = ({
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen/>);
-            }
-
-            if (post.attachments.hasOwnProperty("image")) {
+            case "image":
                 return (
                     <img
                         className={`img-thumbnail rounded-top border-bottom-0 m-0 p-0 d-flex bg-transparent border-secondary`}
                         src={post.attachments.image}
                         alt={post.title}/>);
-            }
+            default:
+                break;
         }
-
-        const dispatch = useDispatch();
-        const deleteTuit = (tuit) => {
-            dispatch({type: 'delete-tuit', tuit})
-        };
+    }
 
         return (
             <>
@@ -74,13 +73,14 @@ const TuitListItem = ({
                         {/* Right-hand side: post content */}
                         <div className={`col-11 align-items-center justify-content-start m-0`}>
 
+
                             {/* User details */}
                             <span className={`wd-font-13 m-0`}><strong>{post.postedBy.username} </strong></span>
                             <span
                                 className={`fas fa-check-circle text-white small ${post.verified === false ? "d-none" : ""}`}/>
                             <span className={`wd-font-13 text-muted m-0`}> @{post.handle}</span>
                             <span className={`text-muted wd-font-13 m-0`}> · {post.time}</span>
-                            <i onClick={() => deleteTuit(post)}
+                            <i onClick={() => deleteTuit(dispatch, post)}
                                className="fa fa-times float-end" aria-hidden="true"/>
 
                             {/* Post title */}
@@ -96,7 +96,6 @@ const TuitListItem = ({
                     </div>
                 </li>
             </>)
-    }
-;
+    };
 
-export default TuitListItem;
+    export default TuitListItem;

@@ -5,26 +5,52 @@
     "userName": "elonmusk",
     "time": "23h",
     "title": "Amazing show about <a href=\"#\">@Inspiration4x</a> mission!",
-    "image": "../images/inspiration4x.jpg",
-    "linkTitle": "Watch Countdown: Inspiration4 Mission to Space | Netflix Official Site",
-    "linkDesc": "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space mission.",
-    "link": "netflix.com",
-    "commentCount": "4.2K",
-    "retweetCount": "3.5K",
-    "likes": "37.5K"
   },
   {
-    "icon": "../images/nypost.jpg",
-    "user": "New York Post",
-    "userName": "nypost",
+    "_id": "123",
+    "topic": "Web Development",
+    "postedBy": {
+      "username": "ReactJS"
+    },
+    "liked": true,
+    "verified": false,
+    "handle": "ReactJS",
+    "time": "2h",
+    "title": "Watch Countdown: Inspiration4 Mission to Space | Netflix Official Site",
+    "tuit": "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space mission.",
+    "attachments": {
+      "link": "netflix.com",
+      "image": "../images/inspiration4x.jpg"
+    },
+    "logo-image": "../../../images/react-blue.png",
+    "avatar-image": "../../../images/react-blue.png",
+    "stats": {
+      "comments": 4200,
+      "retuits": 3500,
+      "likes": 375000
+    }
+  },
+  {
+    "_id": "234",
+    "topic": "",
+    "postedBy": {
+      "username": "New York Post"
+    },
+    "liked": true,
+    "verified": true,
+    "handle": "nypost",
     "time": "23h",
     "title": "JavaScript is programming language that can run on browsers as well as desktops <a href=\"#\">trib.al/nx2Gfaq</a>",
-    "image": "../images/grimes.webp",
-    "linkTitle": "",
-    "linkDesc": "",
-    "link": "",
-    "commentCount": "565",
-    "retweetCount": "2.4K",
-    "likes": "4K"
+    "tuit": "",
+    "attachments": {
+      "image": "../images/grimes.webp"
+    },
+    "logo-image": "../../../images/react-blue.png",
+    "avatar-image": "../images/nypost.jpg",
+    "stats": {
+      "comments": 565,
+      "retuits": 2400,
+      "likes": 4000
+    }
   }
 ]

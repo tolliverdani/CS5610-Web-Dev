@@ -13,7 +13,6 @@ import ExploreScreen from "./components/Tuiter/ExploreScreen";
 import ProfileScreen from "./components/Tuiter/ProfileScreen";
 import EditProfileScreen from "./components/Tuiter/ProfileScreen/EditProfileScreen";
 
-
 function App() {
     return (
         <BrowserRouter>
@@ -42,8 +41,7 @@ function App() {
                 </Routes>
             </div>
         </BrowserRouter>
-    )
-        ;
+    );
 }
 
 export default App;

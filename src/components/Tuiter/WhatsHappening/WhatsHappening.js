@@ -1,18 +1,11 @@
 import React, {useState} from "react"
 import {useDispatch} from "react-redux";
+import {createTuit, deleteTuit} from "../actions/tuits-actions";
 
 const WhatsHappening = () => {
-    let [whatsHappening, setWhatsHappening]
-        = useState('');
 
     const dispatch = useDispatch();
-
-    const tuitClickHandler = () => {
-        dispatch({
-            type: 'create-tuit',
-            tuit: whatsHappening
-        });
-    }
+    const [newTuit, setNewTuit] = useState({tuit: 'New tuit'});
 
     return (
         <>
@@ -27,10 +20,14 @@ const WhatsHappening = () => {
                         <div className={"row d-flex mb-2"}>
                             <textarea className={"border-0 bg-transparent text-dark small"}
                                       placeholder={"What's happening?"}
-                                      value={whatsHappening}
+                                      value={newTuit.tuit}
                                       onChange={(event) =>
-                                          setWhatsHappening(event.target.value)}>
-                            </textarea>
+                                          setNewTuit({
+                                              ...newTuit,
+                                              tuit: event.target.value
+                                          })}/>
+                            <i className="fas fa-remove float-end"
+                               onClick={() => deleteTuit(dispatch, newTuit)}/>
                         </div>
                         <div className={"align-items-center"}>
                             <div className={"d-flex align-items-center justify-content-between"}>
@@ -39,7 +36,8 @@ const WhatsHappening = () => {
                                 <i className="fa fa-smile text-primary" aria-hidden="true"/>
                                 <i className="fa fa-calendar text-primary" aria-hidden="true"/>
                                 <button className={"ms-4 rounded-pill btn-sm btn-primary float-end"}
-                                        onClick={tuitClickHandler}>Tuit
+                                        onClick={() => createTuit(dispatch, newTuit)}>
+                                    Tuit
                                 </button>
                             </div>
                         </div>
@@ -47,7 +45,6 @@ const WhatsHappening = () => {
                 </div>
             </div>
             <br/>
-
         </>
     );
 }
