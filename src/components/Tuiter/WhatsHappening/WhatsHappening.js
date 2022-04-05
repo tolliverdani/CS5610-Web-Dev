@@ -20,12 +20,10 @@ const WhatsHappening = () => {
                         <div className={"row d-flex mb-2"}>
                             <textarea className={"border-0 bg-transparent text-dark small"}
                                       placeholder={"What's happening?"}
-                                      value={newTuit.tuit}
                                       onChange={(event) =>
                                           setNewTuit({
                                               ...newTuit,
-                                              tuit: event.target.value
-                                          })}/>
+                                              tuit: event.target.value})}/>
                             <i className="fas fa-remove float-end"
                                onClick={() => deleteTuit(dispatch, newTuit)}/>
                         </div>
