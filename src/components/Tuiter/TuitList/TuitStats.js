@@ -15,14 +15,12 @@ const TuitStats = ({tuit}) => {
             </span>
             <span>
                 <i onClick={() => updateTuit(dispatch,
-                    {...tuit,
-                        stats: {...tuit.stats, likes: tuit.stats.likes + 1}})}
+                    {...tuit, stats: {...tuit.stats, likes: tuit.stats.likes + 1}})}
                    className="far fa-thumbs-up ms-2"/> {tuit.stats.likes}
             </span>
             <span>
                 <i onClick={() => updateTuit(dispatch,
-                    {...tuit,
-                        stats: {...tuit.stats, dislikes: tuit.stats.dislikes + 1}})}
+                    {...tuit, stats: {...tuit.stats, dislikes: tuit.stats.dislikes + 1}})}
                    className="far fa-thumbs-down ms-2"/> {tuit.stats.dislikes}
             </span>
             <span>

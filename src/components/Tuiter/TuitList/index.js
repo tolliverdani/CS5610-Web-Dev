@@ -6,7 +6,6 @@ import TuitListItem from "./TuitListItem";
 const TuitList = () => {
     const tuits = useSelector(state => state.tuits);
     const dispatch = useDispatch();
-
     useEffect(() => findAllTuits(dispatch), [dispatch]);
 
     return (

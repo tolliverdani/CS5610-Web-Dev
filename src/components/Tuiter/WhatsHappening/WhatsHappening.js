@@ -5,7 +5,7 @@ import {createTuit, deleteTuit} from "../actions/tuits-actions";
 const WhatsHappening = () => {
 
     const dispatch = useDispatch();
-    const [newTuit, setNewTuit] = useState({tuit: 'New tuit'});
+    const [newTuit, setNewTuit] = useState({title: ""});
 
     return (
         <>
@@ -23,7 +23,7 @@ const WhatsHappening = () => {
                                       onChange={(event) =>
                                           setNewTuit({
                                               ...newTuit,
-                                              tuit: event.target.value})}/>
+                                              title: event.target.value})}/>
                             <i className="fas fa-remove float-end"
                                onClick={() => deleteTuit(dispatch, newTuit)}/>
                         </div>
