@@ -14,7 +14,7 @@ export const createTuit = async (tuit) => {
 export const findAllTuits = async () => {
     const response = await axios.get(TUITS_API);
     if ( response.status === 200 ) {
-        return response.data.data;
+        return response.data;
     } else {
         return [];
     }
