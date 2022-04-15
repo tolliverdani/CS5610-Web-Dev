@@ -53,7 +53,7 @@ const TuitListItem = ({
                             className={`fas fa-check-circle text-white small ${post.verified === false ? "d-none" : ""}`}/>
                         <span className={`wd-font-13 small text-muted m-0`}> @{post.handle}</span>
                         <span className={`text-muted small wd-font-13 m-0`}> · {post.time}</span>
-                        <i onClick={() => deleteTuit(dispatch, post["_id"])}
+                        <i onClick={() => deleteTuit(dispatch, post)}
                            className="fa fa-times float-end" aria-hidden="true"/>
 
                         {/* Post title */}
