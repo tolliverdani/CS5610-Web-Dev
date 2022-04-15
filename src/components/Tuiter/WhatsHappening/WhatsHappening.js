@@ -24,8 +24,6 @@ const WhatsHappening = () => {
                                           setNewTuit({
                                               ...newTuit,
                                               title: event.target.value})}/>
-                            <i className="fas fa-remove float-end"
-                               onClick={() => deleteTuit(dispatch, newTuit)}/>
                         </div>
                         <div className={"align-items-center"}>
                             <div className={"d-flex align-items-center justify-content-between"}>

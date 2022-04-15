@@ -12,22 +12,19 @@ export const createTuit = async (dispatch, tuit) => {
 
 export const findAllTuits = async (dispatch) => {
     const tuits = await service.findAllTuits();
-    dispatch({
-        type: FIND_ALL_TUITS,
-        tuits
-    });
+    dispatch({type: FIND_ALL_TUITS, tuits});
 }
 
 export const updateTuit = async (dispatch, tuit) => {
     const status = await service.updateTuit(tuit);
-    if(status === "OK") {
+    if (status === "OK") {
         dispatch({type: UPDATE_TUIT, tuit});
     }
 }
 
 export const deleteTuit = async (dispatch, tuit) => {
     const response = await service.deleteTuit(tuit);
-    if(response === "OK") {
+    if (response === "OK") {
         dispatch({type: DELETE_TUIT, tuit})
     }
 }

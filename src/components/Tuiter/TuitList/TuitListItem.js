@@ -51,9 +51,9 @@ const TuitListItem = ({
                         <span className={`wd-font-13 m-0`}><strong>{post.postedBy.username}</strong></span>
                         <span
                             className={`fas fa-check-circle text-white small ${post.verified === false ? "d-none" : ""}`}/>
-                        <span className={`wd-font-13 text-muted m-0`}> @{post.handle}</span>
-                        <span className={`text-muted wd-font-13 m-0`}> · {post.time}</span>
-                        <i onClick={() => deleteTuit(dispatch, post._id)}
+                        <span className={`wd-font-13 small text-muted m-0`}> @{post.handle}</span>
+                        <span className={`text-muted small wd-font-13 m-0`}> · {post.time}</span>
+                        <i onClick={() => deleteTuit(dispatch, post["_id"])}
                            className="fa fa-times float-end" aria-hidden="true"/>
 
                         {/* Post title */}
@@ -61,7 +61,7 @@ const TuitListItem = ({
 
                         {/* Bottom icons */}
                         <div className={`row m-0 p-0`}>
-                            {<TuitStats tuit={post}/>}
+                            {<TuitStats post={post}/>}
                         </div>
                     </div>
                 </div>
